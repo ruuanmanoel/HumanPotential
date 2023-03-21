@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "HankenGrotesk-VariableFont";
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'HankenGrotesk bold';
+    src: url('assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('opentype');
+    font-weight: 600;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "HankenGrotesk-VariableFont";
+}
+
+#principal{
+    min-width: 375px;
+}
+#area-resultado{
+    background-color: rgba(100, 65, 253, 1);
+    text-align: center;
+    padding: 3rem;
+    border-radius: 0 0  2rem 2rem;
+    color: #fff;
+}
+#area-resultado h2{
+    color: rgb(158, 136, 255);
+}
+#resultado span{
+    font-size:4em;
+}
+#resultado p{
+    color:rgb(118, 101, 255);
+}
+#area-resultado h2{
+    font-family: "HankenGrotesk bold";
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+#area-resultado .texto{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#resultado{
+    background-color: rgba(69, 44, 221, 1);
+    width: 10rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    margin-inline: auto;
+    border-radius: 50%;
+}
+#area-sumario{
+    padding: 2.5rem;
+}
+#area-sumario li{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0;
+    padding: 1rem;
+    border-radius: .7rem ;
+}
+#area-sumario svg{
+    margin-right: 0.5rem;
+    text-align: left;
+}
+#area-sumario ul li .dados{
+    flex-grow: 3;
+    text-align: right;
+    
+}
+
+.react{
+    background-color: rgb(255, 247, 245);
+}
+.memory{
+    background-color: rgb(255, 253, 241);
+}
+.verbal{
+    background-color: rgb(242, 251, 250);
+}
+.vision{
+    background-color: rgb(243, 243, 255);
+}
+
+button{
+    background-color: rgb(48, 60, 90);
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 1.3rem;
+    border-radius: 2rem;
+    margin: 0 auto;
+}
+.dados .tra{
+    color: rgb(183, 193, 193);
+}
+
+@media (min-width:700px) {
+
+    #principal{
+        width: 40rem;
+        margin: 2% auto;
+        box-shadow: 2px 2px 6px  black;
+        border-radius: 2rem;
+    }
+    #area-resultado{
+        border-radius: 2rem;
+    }
+    #conteudo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-item{
+      
+        grid-row: 2;
+        
+
+    }
+
+}
